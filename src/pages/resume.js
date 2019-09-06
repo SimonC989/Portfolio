@@ -1,7 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
-import Layout from "../components/layout"
+import Layout from "../components/layout";
 
 const ResumeBox = styled.div`
   display: flex;

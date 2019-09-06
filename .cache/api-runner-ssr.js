@@ -1,6 +1,9 @@
 var plugins = [{
       plugin: require('/Users/simonchan/Desktop/Projects/Portfolio/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
+    },{
+      plugin: require('/Users/simonchan/Desktop/Projects/Portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

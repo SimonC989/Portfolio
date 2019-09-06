@@ -1,6 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import Layout from "../components/layout"
+import React from "react";
+import styled from "styled-components";
+import { Helmet } from "react-helmet";
+import Layout from "../components/layout";
 import Logos from "../components/Logos.js";
 import GitHubLogo from '../../static/GitHub.png';
 // import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"; 
@@ -226,14 +227,21 @@ class Home extends React.Component {
 
     return (
       <Main>
+        <Helmet>
+          <meta property="og:title" content="Simon Chan Portfolio" />
+          <meta property="og:image" content="Portfolio.png" />
+          <meta property="og:url" content="//http://simonchan.surge.sh/" />
+        </Helmet>
         <Layout>
         </Layout>
+        
         <IntroBox>
           <NameContainer>
             <Name>Simon Chan</Name>
             <Text>Software Engineer</Text>
           </NameContainer>
         </IntroBox>
+
         <ProjectSection id="projects">
           <ProjectTitleBox>
             <ProjectTitle>Projects</ProjectTitle>
@@ -303,6 +311,7 @@ class Home extends React.Component {
             </Project5>
           </ProjectContainer>
         </ProjectSection>
+
         <ContactContainer id="contact">
             <Talk>I'd love to talk! Email me at the address below and let me know your favorite board game!</Talk>
             <Email href="mailto:simonchan989@gmail.com">
@@ -313,7 +322,9 @@ class Home extends React.Component {
               <Logos />
             </EmailText>
         </ContactContainer>
+
         <TopButton id="ToTop" onClick={() => this.BlastOff()} />
+
       </Main>
     )
   }

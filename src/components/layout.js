@@ -1,15 +1,15 @@
 import React from "react";
 import styled from 'styled-components';
-import { useStaticQuery, Link, graphql } from "gatsby";
-import Simon from '../../static/Simon.jpg';
+import { Link } from "gatsby";
+// import Simon from '../../static/Simon.jpg';
 import Logos from '../components/Logos.js';
 
-const Avatar = styled.img`
-  float: left;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-`;
+// const Avatar = styled.img`
+//   float: left;
+//   border-radius: 50%;
+//   height: 100px;
+//   width: 100px;
+// `;
 
 const Container = styled.div`
   // position: relative;
@@ -32,10 +32,10 @@ const List = styled.ul`
   float: left;
 `;
 
-const Header = styled.div`
-  margin-bottom: 30px;
-  width: 100%;
-`;
+// const Header = styled.div`
+//   margin-bottom: 30px;
+//   width: 100%;
+// `;
 
 const Layout = () => {
   return (
